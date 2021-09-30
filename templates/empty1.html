@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Leave History</title>
+		<style>
+			body{
+				font-family:arial,sans-serif;
+				background-color:white;
+				padding:5px
+				}
+
+			.navbar{
+	background-color:#05386B;
+	overflow:hidden;
+}
+.navbar nav ul{
+	list-style-type:none;
+	float:right;
+	margin-right:28px;
+}
+.navbar nav ul li{
+	padding:3px;
+	float:left;
+}
+
+.navbar nav1 ur{
+	list-style-type:none;
+	float:left;
+	margin-right:28px;
+}
+.navbar nav ur li{
+	padding:3px;
+	float:right;
+}
+#h{
+	color:#05386B;
+	font-size:25px;
+}
+
+.navbar nav1 ur li a{
+	margin-top:11.5%;
+	margin-left:16.5px;
+	color:white;
+	text-decoration:none;
+	padding:8px;
+}
+.navbar nav ul li a{
+	margin-right:20px;
+	color:white;
+	text-decoration:none;
+	padding:8px;
+}
+.navbar nav ul li a:hover{
+	color:#05386B;
+	background-color:white;
+}
+.Switch_user{
+	
+	display:none;
+	overflow:hidden;
+}
+.navbar nav ul li:hover .Switch_user{
+	display:block;
+	padding:10px;
+	position:absolute;
+	width:200px;
+	color:white;
+	background-color:#05386B;
+}
+.navbar nav ul li:hover .Switch_user ul{
+	display:block;
+	margin:10px;
+}
+.navbar nav ul li:hover .Switch_user ul li{
+	width:160px;
+	padding:5px;
+	overflow:hidden;
+}
+.sidebar{
+	width:16.96%;
+	float:left;
+	padding:1px;
+}
+.sidebar nav ol{
+	background-color:white;
+	border-top:2px #05386B;	
+	list-style-type:none;
+	padding:2px;
+	margin:10px;
+	overflow:hidden;
+}
+.sidebar nav ol li{
+	padding:9px;
+}
+.sidebar nav ol li a:hover{
+	background-color:#15317E;
+	color:white;
+	padding:7px;
+}
+.sidebar nav ol li a{
+	display:block;
+	color:#05386B;
+	text-decoration:none;
+}
+.border{
+	border:3px #05386B;
+}
+a{
+	transition:0.25s ease;
+	display:block;
+	border-radius:8px;
+	padding:6px;
+}
+h4{
+	margin-left: 23.6%;
+}
+
+
+	</style>
+	</head>
+	<body>
+		<header>
+		<div class="navbar">
+			<nav1>
+			<ur>
+				<li style="margin-left=1px;"><a href="#">Welcome, {{session.username}}</a></li>
+			</ur>
+			</nav1>
+			<nav>
+				<ul>
+					<li><a href="http://localhost:5000/profile">Profile</a></li>
+
+					<li><a href="http://localhost:63342/LEAVE%20MANAGEMENT/templates/change_passwor.html?_ijt=cbbke6sb4gm2j7v27d9gr340gp">Change Password</a></li>
+						
+					<li><a href="http://localhost:5000/logout">Logout</a></li>
+				</ul>
+			  </nav>	
+			</div>
+		</header>
+		 <div class="border">
+		<br>
+		<section>
+			<div class="sidebar">
+			<nav>
+				<ol>
+
+					<li><a href="http://localhost:5000/home">Home </a></li>
+					<li><a href="http://localhost:5000/check_leave ">Leave Availability</a></li>
+					<li><a href="http://localhost:63342/LEAVE%20MANAGEMENT/templates/leave_application.html?_ijt=v15bhvmh12mohri6434cij34o5">Apply for Leave</a></li>
+					<li><a href="http://localhost:5000/leave_history">Leave History</a></li>
+
+				</ol>
+			</nav>
+		</section>
+
+		<h4>Your applied leaves haven't been processed. Please be patient once the leave have been processed it wll be visible if applied.</h4>

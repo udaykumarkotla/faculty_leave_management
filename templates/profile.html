@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Apply for leave</title>
+		<style>
+			body{
+				font-family:arial,sans-serif;
+				background-color:white;
+				padding:5px
+				}
+
+			.navbar{
+	background-color:#05386B;
+	overflow:hidden;
+}
+.navbar nav1 ur{
+	list-style-type:none;
+	float:left;
+	margin-right:28px;
+}
+.navbar nav ur li{
+	padding:3px;
+	float:right;
+}
+
+.navbar nav1 ur li a{
+	margin-top:11.5%;
+	margin-left:16.5px;
+	color:white;
+	text-decoration:none;
+	padding:8px;
+}
+.navbar nav ul{
+	list-style-type:none;
+	float:right;
+	margin-right:28px;
+}
+.navbar nav ul li{
+	padding:3px;
+	float:left;
+}
+#h{
+	color:#05386B;
+	font-size:25px;
+}
+.navbar nav ul li a{
+	margin-right:20px;
+	color:white;
+	text-decoration:none;
+	padding:8px;
+}
+.navbar nav ul li a:hover{
+	color:#05386B;
+	background-color:white;
+}
+.Switch_user{
+	
+	display:none;
+	overflow:hidden;
+}
+.navbar nav ul li:hover .Switch_user{
+	display:block;
+	padding:10px;
+	position:absolute;
+	width:200px;
+	color:white;
+	background-color:#05386B;
+}
+.navbar nav ul li:hover .Switch_user ul{
+	display:block;
+	margin:10px;
+}
+.navbar nav ul li:hover .Switch_user ul li{
+	width:160px;
+	padding:5px;
+	overflow:hidden;
+}
+.sidebar{
+	width:16.96%;
+	float:left;
+	padding:1px;
+}
+.sidebar nav ol{
+	background-color:white;
+	border-top:2px #05386B;	
+	list-style-type:none;
+	padding:1px;
+	margin:10px;
+	overflow:hidden;
+}
+.sidebar nav ol li{
+	padding:7px;
+}
+.sidebar nav ol li a:hover{
+	background-color:#15317E;
+	color:white;
+	padding:7px;
+}
+.sidebar nav ol li a{
+	display:block;
+	color:#05386B;
+	text-decoration:none;
+}
+.border{
+	border:3px #05386B;
+}
+a{
+	transition:0.25s ease;
+	display:block;
+	border-radius:8px;
+	padding:6px;
+}
+
+#t1{
+
+margin-left:26%;}
+
+
+	</style>
+	</head>
+	<body>
+		<header>
+		<div class="navbar">
+			<nav1>
+			<ur>
+				<li style="margin-left:1px; margin-top:21px;"><a href="#">{{session.username}}</a></li>
+			</ur>
+			</nav1>
+
+			<nav>
+				<ul>
+					<li><a href="http://localhost:5000/profile">Profile</a></li>
+					<li><a href="http://localhost:63342/LEAVE%20MANAGEMENT/templates/change_passwor.html?_ijt=14ep15qcg01hgh33ernpuoo69m">Change Password</a></li>
+						
+					<li><a href="http://localhost:5000/logout">Logout</a></li>
+				</ul>
+			  </nav>	
+			</div>
+		</header>
+		<div class="border">
+		<br>
+		<section>
+			<div class="sidebar">
+			<nav>
+				<ol>
+					<li><a href="http://localhost:5000/home">Home </a></li>
+					<li><a href="http://localhost:5000/check_leave">Leaves Summary</a></li>
+					<li><a href="http://localhost:63342/LEAVE%20MANAGEMENT/templates/leave_application.html?_ijt=v15bhvmh12mohri6434cij34o5">Apply for Leave</a></li>
+					<li><a href="http://localhost:5000/leave_history">Leave History</a></li>
+				</ol>
+			</nav>
+		</section>
+	<table>
+     <h2 style="margin-left:46.6%;color:#05386B"><b><i>Profile </i></b></h2>
+	 <table style="margin-left:41.3%; font-size:17.9px;" cellspacing=2 cellpadding=3 >
+	
+			<tr><th>ID<td>:</td></th><td>{{details[0]}}</td></tr>
+			<tr><th>Email<td>:</td></th><td>{{details[1]}}</td></tr>
+			<tr><th>Username<td>:</td></th><td>{{details[2]}}</td></tr>
+			<tr><th>First Name<td>:</td></th><td>{{details[3]}}</td></tr>
+			<tr><th>Last name<td>:</td></th><td>{{details[4]}}</td></tr>
+			<tr><th>Department<td>:</td></th><td>{{details[5]}}</td></tr>
+		    <tr><th>Type<td>:</td></th><td>{{details[6]}}</td></tr>
+			<tr><th>Designation<td>:</td></th><td>{{details[7]}}</td></tr>
+			<tr><th>Mobile<td>:</td></th><td>{{details[8]}}</td></tr>
+	 </table>
+	</table>
+</body>
+</html>

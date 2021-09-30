@@ -1,0 +1,88 @@
+   <html>
+<head>
+<style>
+	body{
+		background:url(w3.jpg) ;
+		background-size:1920px 1020px;
+		background-repeat:no-repeat;
+	}
+	button{
+	background-color:#05386B;
+	color:white;
+	padding:0px 25px;
+	width:120px;
+	height:32px;
+	position:center;
+	border-radius:10px 10px 10px 10px;
+	left:13px;
+	float:center;
+	cursor:pointer;
+	}
+
+	button[type="submit"]:hover{
+	background-color:green;
+	}
+
+	h1{
+		color:#EDF5E1;
+	}
+
+	input[type="text"] {
+	background-color:#05386B;
+	color:white;
+	width:240px;
+	height:30px;
+	border:none;
+	outline:none;
+	left:40px;
+	padding:0px 25px;
+	border-radius:10px;
+	
+	}
+
+	input[type="password"] {
+	background-color:#05386B;
+	color:white;
+	width:240px;
+	height:30px;
+	border:none;
+	outline:none;
+	left:40px;
+	padding:0px 25px;
+	border-radius:10px;
+	
+	}
+
+	::placeholder{
+		color:white;
+		opacity:1;
+	}
+
+	.panel{
+		position:absolute;
+		top:25%;
+		left:22%;
+	}
+	
+</style>
+</head>
+<body>
+<div class="container">
+<br></br><br></br>
+<div class="row">
+    <div class="panel">
+        <div class="panel-heading">
+             <h1><b> Login </b></h1>
+        </div>
+        <div class="panel-body">
+           <form action="http://localhost:5000/login "method="post">
+            <input type="text" class="form-control" required="true" name="email" placeholder="Username">
+               <br></br>
+			<input type="password" required="true" class="form-control" name="password" placeholder="Password"></div>
+            <button type="submit" name="loginBtn" class="btn">Login</button>
+           </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

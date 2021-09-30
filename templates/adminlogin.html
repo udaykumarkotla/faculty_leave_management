@@ -1,0 +1,126 @@
+<html>
+
+<head>
+	<style>
+	body{
+	background-image: linear-gradient(to bottom right, #0000ff,#ffffff);
+}
+button{
+background-color:#3333ff;
+color:white;
+padding:0px 25px;
+width:120px;
+height:32px;
+margin-top: 10px;
+margin-left: 40px;
+position:center;
+border-radius:10px 10px 10px 10px;
+left:13px;
+float:center;
+cursor:pointer;
+}
+
+button[type="submit"]:hover{
+background:#009900;
+}
+
+h2{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	color:#270410;
+}
+
+input[type="email"] {
+background-color:transparent;
+border-bottom: 2x solid red;
+border-top: white;
+border-right: white;
+border-left: white;
+color:black;
+width:200px;
+height:30px;
+/* border:none; */
+outline:none;
+left:40px;
+padding:0px 25px;
+}
+
+input[type="password"] {
+
+	background-color:transparent;
+	border-bottom: 2x solid;
+	border-top: white;
+	border-right: white;
+	border-left: white;
+	color:black;
+	width:200px;
+	height:30px;
+	/* border:none; */
+	outline:none;
+	left:50px;
+	padding:0px 25px;
+}
+
+::placeholder{
+	font-family: cursive;
+	color:black;
+	opacity:1;
+}
+
+.panel{
+	width:200px;
+	height:150px;
+	margin:5px auto;
+}
+.container{
+	border-radius: 10px;
+	background-color: white;
+	position:relative;
+	width:500px;
+	height:500px;
+	left:525px;
+	top:50px;
+}
+.first{
+	width:200px;
+	height:150px;
+	margin:5px auto;
+	text-align: center;
+}
+.second{
+	width:200px;
+	height:150px;
+	margin:5px auto;
+}
+#anitsLogo{
+	width: 100px;
+	margin-top: 44px;
+}
+
+
+	</style>
+	</head>
+
+<body>
+	<div class="container">
+		<div class="first">
+			<img src="Anits.jpg" id="anitsLogo"></img>
+		</div>
+	<div class="panel">
+		<div class="panel-heading">
+			<h2><i> Admin </i></h2>
+		</div>
+		<div class="panel-body">
+			<form action="http://localhost:5000/adminlogin" method="post" autocomplete="off" onsubmit="return">
+				<input type="email" class="form-control" required="true" name="email" placeholder="Email">
+				<br></br>
+				<input type="password" required="true" class="form-control" name="password" placeholder="Password">
+		</div>
+		<i class="bi bi-eye-slash" id="togglePassword"></i>
+		<button type="submit" name="loginBtn" class="btn">Login</button>
+	</div>
+	</form>
+	<div class="second"></div>
+	</div>
+</body>
+</html>

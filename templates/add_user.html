@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add User</title>
+		<style>
+		*{
+    margin: 0px;
+    padding: 0.96px;
+}
+.fl{
+    float: left;
+}
+.warpper{
+    width: 300%;
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    width: 28%;
+    height: 550px;
+    background-color: #008B8B;
+    margin: 20px ;
+    border-radius: 20px 20px 30px 30px;
+}
+.head{
+    width: 100%;
+    background-color: #008B8B;
+    height: 45px;
+    border-radius: 20px 20px 0 0;
+}
+.head p{
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+.form{
+    width: 100%;
+    height: 500px;
+}
+.name{
+    font-size: 16px;
+    color: #fff;
+    margin: 15px 0 0 5%;
+}
+.name-inp{
+    width: 90%;
+    height: 30px;
+    margin: 5px 0 0 5%;
+    font-size: 16px;
+    padding: 2px;
+    color: rgb(114, 111, 111);
+    border: 1px solid rgb(17, 67, 107);
+    background-color: rgb(231, 232, 250);
+}
+.name-inp:hover{
+    background-color:#ADD8E6;
+    color:#36454F;
+    border: 1px solid rgb(139, 139, 139);
+}
+.pass{
+    margin: 5px 0 0 5%;
+    height: 30px;
+    width: 41%;
+    padding: 2px;
+    background-color: rgb(231, 232, 250);
+    border: 1px solid rgb(17, 67, 107);
+}
+.pass:hover{
+    background-color: rgb(0, 23, 41);
+    color: rgb(173, 167, 167);
+    border: 1px solid rgb(139, 139, 139);
+}
+.gender{
+    margin: 15px 0 0 5%;
+    color: #fff;
+    font-size: 16px;
+}
+.gen{
+    font-size: 18px;
+}
+.genm{
+    margin-left: 1%;
+}
+.sub{
+    width: 90%;
+    margin: 15px 0 0 5%;
+    font-size: 16px;
+    height: 40px;
+    background-color: #2EB62C;
+    border: 1px solid rgb(17, 67, 107);
+    color: #fff;
+}
+.sub:hover{
+    background-color: #E94601;
+    color: #fff;
+}
+			body{
+				font-family:arial,sans-serif;
+				background-color:white;
+				padding:5px
+				}
+
+			.navbar{
+	background-color:#05386B;
+	overflow:hidden;
+}
+.navbar nav ul{
+	list-style-type:none;
+	float:right;
+	margin-right:28px;
+}
+.navbar nav ul li{
+	padding:3px;
+	float:left;
+}
+
+.navbar nav1 ur{
+	list-style-type:none;
+	float:left;
+	margin-right:28px;
+}
+.navbar nav ur li{
+	padding:3px;
+	float:right;
+}
+#h{
+	color:#05386B;
+	font-size:25px;
+}
+
+.navbar nav1 ur li a{
+	margin-top:11.5%;
+	margin-left:16.5px;
+	color:white;
+	text-decoration:none;
+	padding:8px;
+}
+.navbar nav ul li a{
+	margin-right:20px;
+	color:white;
+	text-decoration:none;
+	padding:8px;
+}
+.navbar nav ul li a:hover{
+	color:#05386B;
+	background-color:white;
+}
+.Switch_user{
+
+	display:none;
+	overflow:hidden;
+}
+.navbar nav ul li:hover .Switch_user{
+	display:block;
+	padding:10px;
+	position:absolute;
+	width:200px;
+	color:white;
+	background-color:#05386B;
+}
+.navbar nav ul li:hover .Switch_user ul{
+	display:block;
+	margin:10px;
+}
+.navbar nav ul li:hover .Switch_user ul li{
+	width:160px;
+	padding:5px;
+	overflow:hidden;
+}
+.sidebar{
+	width:17%;
+	float:left;
+	padding:0px;
+}
+.regform{
+	width:83%;
+	float:right;
+	padding:0px;
+}
+.sidebar nav ol{
+	background-color:white;
+	border-top:2px #05386B;
+	list-style-type:none;
+	padding:2px;
+	margin:10px;
+	overflow:hidden;
+}
+.sidebar nav ol li{
+	padding:9px;
+}
+.sidebar nav ol li a:hover{
+	background-color:#15317E;
+	color:white;
+	padding:7px;
+}
+.sidebar nav ol li a{
+	display:block;
+	color:#05386B;
+	text-decoration:none;
+}
+.border{
+	border:3px #05386B;
+}
+a{
+	transition:0.25s ease;
+	display:block;
+	border-radius:8px;
+	padding:6px;
+}
+
+	</style>
+	</head>
+	<body>
+		<header>
+
+		<div class="navbar">
+			<nav1>
+			<ur>
+				<li style="margin-left=1px;"><a href="#">Welcome, Admin</a></li>
+			</ur>
+			</nav1>
+		<br>
+			<nav>	
+				<ul>
+					<li><a href="http://localhost:5000/logout">Logout</a></li>
+				</ul>
+			  </nav>
+<br>			  
+			</div>
+		
+		</header>
+		
+		<div class="border">
+		<br>
+		<section>
+			<div class="sidebar">
+			<nav>
+				<ol>
+					<li><a href="http://localhost:63342/LEAVE%20MANAGEMENT/templates/add_user.html?_ijt=6oiilac1dilqnvujkjgfog1rrj">Add User</a></li>
+					<li><a href="http://localhost:5000/Afac_lis">Faculty list</a></li>
+				</ol>
+			</nav>
+		</div>
+		<div class="regform"><article>
+		<table align="center">
+		   <div class="warpper fl">
+        <div class="main">
+            <div class="head">
+<p>
+Faculty Registration Form</p>
+</div>
+<div class="form fl">
+	<form action="http://localhost:5000/add_user" method="POST" autocomplete="off">
+		<p class="name"> FIRST NAME * :</p>
+<p> <input type="text" name="fname" required="true" placeholder="First Name" class="name-inp"></p>
+<p class="name">LAST NAME * :</p>
+<p> <input type="text" name="lname" placeholder="Last Name" class="name-inp" required="true"></P>
+		<p class="name"><span class="gen" required="true">DEPT*</span>
+                        <input type="radio" name="de" value="CSE" class="genm">CSE
+                        <input type="radio" name="de" value="ECE" class="genm">ECE
+						<input type="radio" name="de" value="EEE" class="genm">EEE<br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="radio" name="de" value="MECH" class="genm">MECH
+						<input type="radio" name="de" VALUE="CHE" class="genm">CHE
+						<input type="radio" name="de" VALUE="IT" class="genm">IT
+                    </p>
+<p class="gender">
+<span class="gen" required="true">TYPE *</span>
+	<input type="radio" name="ty" value="Teaching" class="genm">TEACHING
+	<input type="radio" name="ty" value="Non-Teaching" class="genm">NON-TEACHING
+</p>
+
+<p class="name"> DESIGNATION * :</p>
+<p> <input type="text" name="designation" required="true" placeholder="Designation" class="name-inp"></p>
+		<p class="name"> MOBILE *:</p>
+<p><input type="text" name="phone" placeholder="Phone" required="true" class="name-inp"></p>
+
+<p><input type="submit" name="sb" value="Add Faculty" required="true" class="sub"></p>
+</form>
+</div>
+</div>
+</div>
+		</table>
+		</article>
+		</div>
+		</section>
+		</div>
+	</body>
+</html>
